@@ -63,7 +63,9 @@ Firstly using PCA to seperatedly reduce the 4-dimensional 11 variables to 2 dime
 
 ![](Improved-NN/Improved-NN.png)
 
-(I was planned to add a SVD layer after concatenate, but If added I always got NaN values for loss, maybe I wrote the wrong SVD layer. You can check if there're some mistakes, PRs are welcome.)
+~~(I was planned to add a SVD layer after concatenate, but If added I always got NaN values for loss, maybe I wrote the wrong SVD layer. You can check if there're some mistakes, PRs are welcome.)~~
+
+(The problem was solved, colab seems to have some problems when I try to run with SVD. I can run this successfully with tensorflow 2.5.0 and python 3.8.5 with anaconda, Linux. But it gets worse with SVD added, so I removed the layer.)
 
 Result:
 
@@ -126,7 +128,9 @@ Simple NNs are short of predicting stock market since they don't have the abilit
 
 ![](Improved-NN/Improved-NN.png)
 
-（我本来打算在11个神经网络连接之后添加一个SVD层，但是如果添加，我总是得到损失为NaN值，也许SVD层的定义有错误。你可以看看是否有错误，欢迎提交PR。）
+~~（我本来打算在11个神经网络连接之后添加一个SVD层，但是如果添加，我总是得到损失为NaN值，也许SVD层的定义有错误。你可以看看是否有错误，欢迎提交PR。）~~
+
+（问题解决了，我试着用SVD运行的时候，colab好像有点问题。我可以在Linux下用TensorFlow2.5.0和Python3.8.5以及Anaconda成功地运行它。但SVD的加入会使情况变得更糟，所以我删除了该层。）
 
 结果：
 
